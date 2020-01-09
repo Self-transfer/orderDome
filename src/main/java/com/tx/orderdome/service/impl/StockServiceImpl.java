@@ -5,11 +5,12 @@ import com.tx.orderdome.pojo.Stock;
 import com.tx.orderdome.service.StockService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
-
+@Service
 public class StockServiceImpl implements StockService {
     @Autowired
     private StockMapper stockMapper;
